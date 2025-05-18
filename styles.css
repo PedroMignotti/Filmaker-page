@@ -1,0 +1,296 @@
+    body.lightmode {
+        font-family: 'Poppins', sans-serif;
+        background-color: rgb(222, 222, 222);
+    }
+
+    body.darkmode {
+        font-family: 'Poppins', sans-serif;
+        background-color: #1A1A1A;
+        color: white;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    main {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    body.lightmode nav.navbar {
+        background-color: rgb(232, 232, 232);
+        border-bottom: 0;
+        height: 8vh;
+    }
+
+    body.darkmode nav.navbar {
+        background-color: #1A1A1A;
+        border-bottom: 0;
+        height: 8vh;
+    }
+
+
+    .lightmode .navbar-brand {
+        color: black !important;
+    }
+
+    .darkmode .navbar-brand {
+        color: white !important;
+    }
+
+
+    .lightmode .navbar-nav .nav-link {
+        color: black !important;
+        transition: transform 0.3s ease;
+
+    }
+
+    .lightmode .navbar-nav .nav-link:hover {
+        transform: scale(1.1);
+    }
+
+    .darkmode .navbar-nav .nav-link {
+        color: white !important;
+        transition: transform 0.3s ease;
+
+    }
+
+    .darkmode .navbar-nav .nav-link:hover {
+        transform: scale(1.1);
+    }
+
+    .toggle-btn {
+        background-color: transparent;
+        border: 2px solid currentColor;
+        font-size: 1.3rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        border-radius: 50%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .toggle-btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .lightmode .toggle-btn {
+        color: rgb(23, 89, 255);
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .darkmode .toggle-btn {
+        color: cyan;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+
+    .card-custom {
+        transition: transform 0.2s ease;
+    }
+
+    .card-custom:hover {
+        transform: scale(1.02);
+    }
+
+    .lightmode .btn-custom:hover {
+        background-color: rgb(222, 222, 222);
+        color: rgb(23, 89, 255);
+    }
+
+    .darkmode .btn-custom:hover {
+        background-color: #1A1A1A;
+        color: rgb(23, 89, 255);
+    }
+
+    .btn-tamanho {
+        height: 10vh;
+        font-size: calc(0.5rem + 1vw);
+        color: rgb(23, 89, 255);
+        border-color: rgb(23, 89, 255);
+    }
+
+    .btn-tamanho:hover {
+        background-color: rgb(23, 89, 255);
+    }
+
+    .titulo-principal0 {
+        font-size: calc(1rem + 3vw);
+    }
+
+    .titulo-principal1 {
+        color: rgb(23, 89, 255);
+        font-size: calc(1rem + 7vw);
+    }
+
+    .video {
+        width: 100%;
+        border-radius: 40px;
+    }
+
+    .titulos-usuais {
+        font-size: calc(0.5rem + 2vw);
+    }
+
+    .titulos-usuais2 {
+        font-size: calc(0.5rem + 2.5vw);
+    }
+
+    .texto-padrao {
+        font-size: calc(0.1rem + 1vw);
+    }
+
+    .images {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .quadrado-responsivo {
+        width: 100%;
+        max-width: 400px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    .palavra-destaque {
+        color: rgb(23, 89, 255);
+    }
+
+
+    .card-custom {
+        height: 500px;
+        background-color: #000;
+    }
+
+    .card-overlay {
+        position: absolute;
+        bottom: 5%;
+        left: 10%;
+        width: 80%;
+        background: rgb(48, 48, 48);
+        border-radius: 1rem;
+        padding: 1rem;
+        color: white;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+        word-break: break-word;
+        max-width: 100%;
+    }
+
+    .btn-portf {
+        color: rgb(23, 89, 255);
+        border-color: rgb(23, 89, 255);
+    }
+
+    .btn-portf:hover {
+        background-color: rgb(23, 89, 255);
+    }
+
+    .div-img-dois {
+        display: inline-block;
+        width: 30vw;
+    }
+
+    .img-dois {
+        width: 30vw;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+
+
+    /*--- responsividade ---*/
+    @media (max-width: 600px) {
+        .sumir {
+            display: none;
+        }
+
+        .btn-tamanho {
+            width: 50vw;
+            height: auto;
+            margin: 1rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .btn-portf {
+            width: 50%;
+        }
+
+        .texto-padrao {
+            font-size: calc(0.8rem + 1vw) !important;
+        }
+
+        .img-dois {
+            width: 60vw;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h2 {
+            font-size: calc(0.5rem + 2.5vw) !important;
+        }
+
+        .titulos-usuais2 {
+            font-size: calc(0.5rem + 2.5vw) !important;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .texto-padrao {
+            font-size: calc(0.5rem + 1vw);
+        }
+
+        .titulos-usuais {
+            font-size: calc(1rem + 2vw);
+        }
+
+        .titulos-usuais2 {
+            font-size: calc(1rem + 2.5vw);
+        }
+
+        h2 {
+            font-size: calc(0.3rem + 2.5vw);
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .btn-portf {
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .btn-container-xs {
+            flex-direction: column !important;
+            gap: 1rem !important;
+        }
+    }
+
+
+    @media (max-width: 992px) {
+        .titulo-responsivo strong {
+            display: none;
+        }
+
+        .titulo-responsivo::before {
+            content: attr(data-text);
+            display: block;
+            font-weight: bold;
+            font-size: calc(1rem + 2vw);
+        }
+    }
+
+    @media (max-width: 1150px) {
+        .texto-padrao {
+            font-size: calc(0.3rem + 1vw);
+        }
+    }
