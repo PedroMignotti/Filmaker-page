@@ -30,6 +30,27 @@
         height: 8vh;
     }
 
+    body.lightmode .navbar-collapse {
+        background-color: rgba(232, 232, 232, 0.95);
+        padding: 1rem;
+        border-radius: 0 0 10px 10px;
+    }
+
+    body.darkmode .navbar-collapse {
+        background-color: rgba(26, 26, 26, 0.95);
+        padding: 1rem;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .navbar-collapse {
+        transition: background-color 0.5s ease;
+    }
+
+
+    body {
+        transition: background-color 0.5s ease;
+    }
+
 
     .lightmode .navbar-brand {
         color: black !important;
